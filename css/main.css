@@ -294,11 +294,11 @@ input[type=submit]:hover {
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
     .show {display:block;}
     .footer{
-        width: 500px;
+        width: 100%;
 
     }
     .formdesigne{
-        width: 440px;
+        width: 100%;
     }
     
     .thankyou_message{
