@@ -8,16 +8,17 @@ body{
     background-image: url("../img/david-jorre-712468-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #3a2d2d;
+    background-color:black;
 }
-.header{
-    
+/*augša kā vizītkarte*/
+.header{  
     text-align: center;
     background: #000000;
     color: cornsilk;
-    height: 205px;  
+    height: 210px;    
+    font-family: 'Play', sans-serif;
+    position: relative;
    
-     
 }
 .column {
     float: left;   
@@ -25,19 +26,20 @@ body{
     position: relative;
     width: 30%;
     height: 200px;
-    font-size: 20px;
+    font-size: 1em;
+    
     
 }
 .column a{
     color: white;
     text-decoration: none;
-  
 }
 /*Nav*/
 .designebody{
     margin: 0 auto;
     text-align: left;
-    width: 800px;
+    width: 850px;
+    position: relative;
 }
 .tab {
     overflow: hidden;
@@ -62,13 +64,12 @@ body{
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: rgb(189, 184, 184);
-
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: black;
-    color: white;
+    color: rgb(240, 219, 28);
 }
 
 /* Style the tab content */
@@ -78,6 +79,9 @@ body{
     background-color: rgba(192, 191, 191, 0.315);
     border-top: none;
     color: white; 
+    position: relative;
+    padding-left: 25%;
+
 }
 
 
@@ -135,7 +139,7 @@ body{
 .footer{
     margin: 0 auto;
     text-align: left;
-    width: 800px;
+    width: 850px;
     color: #ddd;
     padding: 10px;
     background-color: #aca1a13d;
@@ -213,99 +217,32 @@ input[type=submit]:hover {
 .contact {
     width: 500px;
     border-radius: 5px;
-   
     padding: 20px;
 }
 @media screen and (max-width: 700px){
-    .tab{
-        width: 100%;
-    }
-    .tabcontent{
-        width: 500px;
-    }
-    .customers{
-        width: 100%;
-    }
-    
-    .content-designe{
-        height: 60%;
-    }
-    #customers{
-        width: 90%;
-    }
-    .navbar a{
-        float: none;
-        display: block;
-        width: 100%;
-    }
-    .left{
-        width: 100%;
-    }
-    .right{
-        display: none;
-    }
     .column{
         width: 100%;
         background-color: #000000;
         text-align: center;
-        height: 25%;
+        
     }
-    .dropbtn {
-        background-color: #000000;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    /* Dropdown button on hover & focus */
-    .dropbtn:hover, .dropbtn:focus {
-        background-color: #ddd;
-    }
-    
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #ddd}
-    
-    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-    .show {display:block;}
-    .footer{
+    .designebody{
         width: 100%;
-
+        margin-top: 200px;
+    }
+    .tabcontent{
+        padding: 5px;
+        width: auto; 
+    }
+    #customers{
+        width: 370px;
+    }
+    .footer{
+        width: auto;
     }
     .formdesigne{
-        width: 100%;
+        width: auto;
     }
-    
-    .thankyou_message{
-        width: 100%;
-        float: left;
-    }
-    
   
    
     
