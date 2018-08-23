@@ -3,7 +3,13 @@
       var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
       return re.test(email);
     }
-  
+    function validName(){
+      var x = document.forms["Forms"]["name"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    }
     function validateHuman(honeypot) {
       if (honeypot) {  //if hidden form filled up
         console.log("Robot Detected!");
@@ -12,8 +18,10 @@
         console.log("Welcome Human!");
       }
     }
+    
   
     // get all data in form and return object
+
     function getFormData(form) {
       var elements = form.elements;
   
@@ -64,12 +72,12 @@
       var form = event.target;
       var data = getFormData(form);         // get the values submitted in the form
   
-      /* OPTION: Remove this comment to enable SPAM prevention, see README.md
+     
       if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
         return false;
       }
-      */
-  
+    
+      
       if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
         var invalidEmail = form.querySelector(".email-invalid");
         if (invalidEmail) {
@@ -103,6 +111,7 @@
         xhr.send(encoded);
       }
     }
+    
     
     function loaded() {
       console.log("Contact form submission handler loaded successfully.");
