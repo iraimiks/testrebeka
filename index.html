@@ -158,25 +158,25 @@
         <div class="form-elements">
           <fieldset class="pure-group">
             <label for="name">Pilns vārds: </label>
-            <input id="name" name="name" placeholder="Vārds Uzvārds">
+            <input id="name" name="name" placeholder="Vārds Uzvārds" required>
           </fieldset>
     
           <h2>Vēlamais Pakalpojums</h2>
       <fieldset class="pure-group">
         <label for="option-one" class="pure-checkbox">Manikīrs</label>
-        <input id="option-one" type="checkbox"  name="Manikirs" value="Manikirs">       
+        <input id="option-one" type="checkbox"  name="Manikirs" value="Manikirs" required>       
       </fieldset>
       <fieldset class="pure-group">         
             <label for="option-one" class="pure-checkbox"> Pedikīrs </label>
-            <input id="option-one" type="checkbox"  name="Pedikirs" value="Pedikirs"> 
+            <input id="option-one" type="checkbox"  name="Pedikirs" value="Pedikirs" required> 
       </fieldset>
       <fieldset class="pure-group">
         <label for="event">Vēlamais pieraksta laiks: </label>
-        <input id="event" type="datetime-local" name="event" value="2018-08-12T19:30"/>
+        <input id="event" type="datetime-local" name="event" value="2018-08-12T19:30" required>
       </fieldset>
       <fieldset class="pure-group">
         <label for="tel">Talrunis: </label>
-        <input id="tel" name="tel" type="tel" placeholder="Telefons saziņai">
+        <input id="tel" name="tel" type="tel" placeholder="Telefons saziņai" required>
       </fieldset>
       <br>
           <button  type="submit" class="button-success pure-button button-xlarge">
@@ -184,7 +184,7 @@
         </div>
        
         <!-- Customise the Thankyou Message People See when they submit the form: -->
-        <div class="thankyou_message" style="display:none;">
+        <div class="thankyou_message"  style="display:none;">
           <h2><em>Paldies</em> 
             Mēs ar jums sazināsimies tuvakājā laikā!</h2>
         </div>
