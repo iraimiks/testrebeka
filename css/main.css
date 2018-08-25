@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kavivanar|Pacifico|Yellowtail');
 @import url('https://fonts.googleapis.com/css?family=Play');
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +10,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-color:black;
+    font-family: 'Play', sans-serif;
+
 }
 /*augša kā vizītkarte*/
 .header{  
@@ -16,8 +19,8 @@ body{
     background: #000000;
     color: cornsilk;
     height: 210px;    
-    font-family: 'Play', sans-serif;
     position: relative;
+    font-size: 1.2em;
    
 }
 .column {
@@ -57,7 +60,7 @@ body{
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 1.5em;
     color: white;
 }
 
@@ -76,7 +79,7 @@ body{
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    background-color: rgba(192, 191, 191, 0.315);
+    background-color: rgba(0, 0, 0, 0.315);
     border-top: none;
     color: white; 
     position: relative;
@@ -92,7 +95,7 @@ body{
 {   
     position: relative;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+    border: none;
     width: 400px;
 }
 
@@ -108,7 +111,7 @@ body{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: rgb(43, 53, 43);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 /*Pieraksts*/
@@ -140,10 +143,17 @@ body{
     margin: 0 auto;
     text-align: left;
     width: 850px;
-    color: #ddd;
     padding: 10px;
     background-color: #aca1a13d;
     height: 600px;
+    border-radius: 5px;
+    
+}
+.footer h2{
+    color: white;
+}
+.footer label{
+    color: #ddd;
 }
 .pieraksts{
     position: fixed;
@@ -154,10 +164,11 @@ body{
     border: none;
     outline: none;
     background-color:gray;
-    color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    text-decoration: none;
+    color: #000000;
 }
 #myBtn {
     background-image: url(../img/arrow-icon-clip-art-file-down-arrow-icon-png-balin-icon-arrow-right-32\ -\ Copy.png);
@@ -193,29 +204,10 @@ body{
 input[type="datetime-local"]{
     width: auto;
 }
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
 
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+
+
 
 .contact {
     width: 500px;
